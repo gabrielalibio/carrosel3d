@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: chernobyl;
+    src: url(fontes/chernobyl/Chernobyl.otf);
+}
+
+@font-face {
+    font-family: mexicana;
+    src: url(fontes/mexican_fiesta/mexican\ fiesta.ttf);
+}
+
+@font-face {
+    font-family: whiskey;
+    src: url(fontes/whiskey_state/WhiskeyState_PERSONAL_USE_ONLY.otf);
+}
+
+body{
+    margin: 0;
+    background-color: #87CEEB;
+    font-family: sans-serif;
+    color: #00FF00;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards;
+}
+
+.imagem{
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+      transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2022/11/GettyImages-1442014517.jpg?quality=90&strip=info&w=720&h=440&crop=1);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt49f4fa9c86f3dfbf/639110f92c80260f56fcfbad/1446782533.jpg?auto=webp&format=pjpg&width=3840&quality=60);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://www.atribuna.com.br/storage/Esportes/Mais_Esportes/img1145701110543.webp);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://stories.abcdoabc.com.br/wp-content/uploads/2023/06/Salario_de_Jude_Bellingham_revelado_qual_e_o_valor_2.png);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/09/GettyImages-1610632904-e1695329411835.jpg?w=1220&h=674&crop=1);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://lncimg.lance.com.br/cdn-cgi/image/width=1214,height=560,quality=75,format=webp/uploads/2023/10/000_33XD6NK-aspect-ratio-512-320.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/230903122621-01-jude-bellingham-real-madrid.jpg?c=original);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://tmssl.akamaized.net/images/foto/newsansicht/jude-bellingham-bvb-2023-1686177929-108832.jpeg?lm=1686177945);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://e0.365dm.com/23/05/2048x1152/skysports-jude-bellingham-borussia-dortmund_6142408.jpg?20230503152438);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+header h1 p{
+    text-align: center;
+    color: #228B22;
+    font-family: mexicana;
+    font-size: 70px;
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
